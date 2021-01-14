@@ -3,8 +3,9 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const pageList = require('./pages.json');
+const confInfo = require('./conferenceInfo.json');
 
-const pages = function (params) {
+const pages = function () {
     return pageList.map((p) => {
         return {
             title: p.title,
@@ -12,7 +13,8 @@ const pages = function (params) {
             template: './source/pug/' + p.url + '.pug',
             templateParameters: {
                 pages: pageList,
-                activePage: p
+                activePage: p,
+                conf: confInfo
             }
         };
     });
@@ -22,7 +24,8 @@ const common = function (env) {
     const plugins = [
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'source/css', to: '.' }
+                { from: 'source/css', to: '.' },
+                { from: 'source/img', to: '.', }
             ]
         })
     ];

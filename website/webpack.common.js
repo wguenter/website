@@ -2,7 +2,23 @@
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = function (env) {
+const pageList = require('./pages.json');
+
+const pages = function (params) {
+    return pageList.map((p) => {
+        return {
+            title: p.title,
+            filename: p.url + '.html',
+            template: './source/pug/' + p.url + '.pug',
+            templateParameters: {
+                pages: pageList,
+                activePage: p
+            }
+        };
+    });
+}
+
+const common = function (env) {
     const plugins = [
         new CopyWebpackPlugin({
             patterns: [
@@ -35,3 +51,5 @@ module.exports = function (env) {
         plugins
     };
 }
+
+module.exports = { pages, common };

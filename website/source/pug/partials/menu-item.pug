@@ -1,0 +1,6 @@
+mixin menu-item(page, activePage)
+    li.menu
+        if(page.url === activePage.url)
+            .active= page.title
+        else
+            a(href=page.url + ".html")= page.title

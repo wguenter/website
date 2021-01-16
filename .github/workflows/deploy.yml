@@ -1,0 +1,38 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize Node.js environment
+        uses: actions/setup-node@v2
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          path: src
+      - name: Check out deploy branch
+        uses: actions/checkout@v2
+        with:
+          ref: deploy
+          path: deploy
+      - name: Clean up output
+        run: rm -rf .
+        working-directory: deploy
+      - name: Set up dependencies
+        run: node install
+        working-directory: src
+      - name: Build website
+        run: node run build -- -o=../deploy
+        working-directory: src
+      - name: Commit result
+        run: |
+          git add *
+          git commit -m "deploy: ${{ github.event.head_commit.message }}"
+          git push
+        working-directory: deploy

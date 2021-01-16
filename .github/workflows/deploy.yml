@@ -32,7 +32,7 @@ jobs:
         working-directory: src
       - name: Create CNAME
         run: echo "vinci-conf.org" > CNAME
-        working-directory: src
+        working-directory: deploy
       - name: Commit result
         run: |
           git config user.email "${{ github.event.pusher.email }}"

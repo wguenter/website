@@ -28,7 +28,7 @@ jobs:
         run: npm install
         working-directory: src
       - name: Build website
-        run: npm run build -- -o=../deploy
+        run: npm run build -- -o=../deploy/
         working-directory: src
       - name: Commit result
         run: |

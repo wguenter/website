@@ -22,7 +22,7 @@ jobs:
           ref: deploy
           path: deploy
       - name: Clean up output
-        run: rm -rf .
+        run: rm -rf *
         working-directory: deploy
       - name: Set up dependencies
         run: node install

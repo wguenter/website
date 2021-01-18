@@ -1,6 +1,6 @@
 [
     {
-        "title": "Home",
+        "title": "Overview",
         "url": "index"
     },
     {
@@ -16,8 +16,8 @@
         "url": "keynotes"
     },
     {
-        "title": "Workshop",
-        "url": "workshop"
+        "title": "Workshops",
+        "url": "workshops"
     },
     {
         "title": "Event",

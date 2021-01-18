@@ -4,4 +4,7 @@ html(lang="en")
     body
         include partials/header
         include partials/menu
-        block content
+        .wrapper
+            .main
+                include partials/heading.pug
+                block content

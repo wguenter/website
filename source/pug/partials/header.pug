@@ -3,6 +3,6 @@
         a(href="index.html")
             | The #{conf.number}
             sup #{conf.ordinal}
-            |  #{conf.title} (#{conf.short})
+            |  #{conf.title} (#{conf.short} #{conf.year})
     .explain
-        span.imgtext Potsdam, Germany, 6-8 Sep. 2021
+        span.imgtext #{conf.location}, #{conf.date} #{conf.year}

@@ -1,6 +1,10 @@
 {
     "title": "International Symposium on Visual Information Communication and Interaction",
+    "short": "VINCI",
     "number": "14",
     "ordinal": "th",
-    "short": "VINCI 2021"
+    "date": "6-8 Sep.",
+    "year": "2021",
+    "shortYear": "'21",
+    "location": "Potsdam, Germany"
 }

@@ -9,6 +9,7 @@ body {
     margin: 0px auto;
     padding:0;
     width: var(--page-width);
+    overflow-y: scroll;
 }
 
 .text {

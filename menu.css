@@ -1,0 +1,33 @@
+@import 'defs.css';
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    float: left;
+    width: 12.5%;
+    height: var(--menu-height);
+    line-height: var(--menu-height);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.menu .active {
+    background-color: var(--menu-highlight-color);
+    color: var(--menu-text-color);
+}
+
+.menu a {
+    background-color: var(--menu-color);
+    color: var(--menu-text-color);
+    text-decoration:none;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: var(--menu-highlight-color);
+}

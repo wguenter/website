@@ -1,0 +1,16 @@
+:root {
+    --page-width: 900px;
+    --left-width: 500px;
+    --menu-height: 50px;
+
+    --page-background-color: #eee;
+    --title-text-color: #ffffff;
+
+    --menu-color: #398793;
+    --menu-highlight-color: #196773;
+    --menu-text-color: #ffffff;
+
+    --content-background-color: #ffffff;
+    --content-text-color: #444444;
+    --heading-text-color: #ffa500;
+}

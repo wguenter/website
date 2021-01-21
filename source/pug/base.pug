@@ -5,6 +5,8 @@ html(lang="en")
         include partials/header
         include partials/menu
         .wrapper
-            .main
+            .left
                 include partials/heading.pug
                 block content
+            .right
+                include partials/sidebar.pug

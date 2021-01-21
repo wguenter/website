@@ -1,0 +1,9 @@
+.text {
+    font-size: 12px;
+    line-height: 170%;
+    color: var(--content-text-color);
+}
+
+.previous {
+    margin-bottom: 0;
+}

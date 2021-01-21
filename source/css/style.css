@@ -2,20 +2,16 @@
 @import 'menu.css';
 @import 'defs.css';
 @import 'header.css';
+@import 'sidebar.css';
+@import 'text.css';
 
 body {
     background-color: var(--page-background-color);
     font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0px auto;
-    padding:0;
+    padding: 0;
     width: var(--page-width);
     overflow-y: scroll;
-}
-
-.text {
-    font-size: 12px;
-    line-height: 170%;
-    color: var(--content-text-color);
 }
 
 .wrapper {
@@ -24,13 +20,16 @@ body {
     background-color: var(--content-background-color);
 }
 
-.main {
+.left {
     float: left;
     width: var(--left-width);
-    padding: 30px;
+    padding: var(--content-spacing);
     text-align: justify;
 }
 
-.previous {
-    margin-bottom: 0;
+.right {
+    float: right;
+    width: var(--right-width);
+    padding: var(--content-spacing);
+    padding-left: 0;
 }

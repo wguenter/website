@@ -1,6 +1,9 @@
 :root {
     --page-width: 900px;
-    --left-width: 500px;
+    --content-spacing: 25px;
+    --content-width: calc(var(--page-width) - 3 * var(--content-spacing));
+    --left-width: calc(var(--content-width) * 0.65);
+    --right-width: calc(var(--content-width) * 0.35);
     --menu-height: 50px;
 
     --page-background-color: #eee;

@@ -12,3 +12,7 @@ h3 {
     color: var(--main-color-dark);
     margin: 0;
 }
+
+.heading img {
+    width: 1.1em;
+}

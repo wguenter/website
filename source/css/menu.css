@@ -11,7 +11,7 @@
     line-height: var(--menu-height);
     text-align: center;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .menu .active {

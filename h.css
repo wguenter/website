@@ -3,15 +3,16 @@ h2, h3 {
 }
 
 h2 {
+    color: var(--main-color);
     display: inline;
     margin: 0 0.5ch 0 0.5ch;
 }
 
 h3 {
+    color: var(--main-color-dark);
     margin: 0;
-    font-weight: normal;
 }
 
-.heading h2 {
-    color: var(--heading-text-color);
+.heading img {
+    width: 1.1em;
 }

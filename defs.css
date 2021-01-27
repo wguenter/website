@@ -6,14 +6,13 @@
     --right-width: calc(var(--content-width) * 0.35);
     --menu-height: 50px;
 
-    --page-background-color: #eee;
-    --title-text-color: #ffffff;
-
-    --menu-color: #398793;
-    --menu-highlight-color: #196773;
-    --menu-text-color: #ffffff;
-
+    --page-background-color: #eeeeee;
     --content-background-color: #ffffff;
-    --content-text-color: #444444;
-    --heading-text-color: #ffa500;
+
+    --main-color: #398793;
+    --main-color-dark: #196773;
+    --main-color-light: #35b3bd;
+
+    --light-text-color: #ffffff;
+    --dark-text-color: #444444;
 }

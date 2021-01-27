@@ -1,7 +1,7 @@
 .text {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 170%;
-    color: var(--content-text-color);
+    color: var(--dark-text-color);
 }
 
 .previous {

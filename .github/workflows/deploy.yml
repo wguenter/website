@@ -24,6 +24,9 @@ jobs:
       - name: Clean up output
         run: rm -rf *
         working-directory: deploy
+      - name: Echo output contents
+        run: ls -A
+        working-directory: deploy
       - name: Set up dependencies
         run: npm install
         working-directory: src

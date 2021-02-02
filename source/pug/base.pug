@@ -1,0 +1,12 @@
+html(lang="en")
+    head
+        include partials/head
+    body
+        include partials/header
+        include partials/menu
+        .wrapper
+            .left
+                include partials/page-heading
+                block content
+            .right
+                include partials/sidebar

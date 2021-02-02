@@ -1,0 +1,18 @@
+:root {
+    --page-width: 900px;
+    --content-spacing: 25px;
+    --content-width: calc(var(--page-width) - 3 * var(--content-spacing));
+    --left-width: calc(var(--content-width) * 0.65);
+    --right-width: calc(var(--content-width) * 0.35);
+    --menu-height: 50px;
+
+    --page-background-color: #eeeeee;
+    --content-background-color: #ffffff;
+
+    --main-color: #398793;
+    --main-color-dark: #196773;
+    --main-color-light: #35b3bd;
+
+    --light-text-color: #ffffff;
+    --dark-text-color: #444444;
+}

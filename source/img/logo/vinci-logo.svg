@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_4_);fill:url(#SVGID_5_);}
+	.st2{clip-path:url(#SVGID_4_);fill:url(#SVGID_6_);}
+	.st3{clip-path:url(#SVGID_4_);fill:url(#SVGID_7_);}
+	.st4{clip-path:url(#SVGID_4_);fill:url(#SVGID_8_);}
+	.st5{clip-path:url(#SVGID_4_);fill:url(#SVGID_9_);}
+	.st6{clip-path:url(#SVGID_4_);fill:url(#SVGID_10_);}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M187.07,196.27H12.93c-5.08,0-9.19-4.11-9.19-9.19V12.93c0-5.08,4.11-9.19,9.19-9.19h174.15
+			c5.08,0,9.19,4.11,9.19,9.19v174.15C196.27,192.15,192.15,196.27,187.07,196.27z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<defs>
+			<path id="SVGID_3_" d="M80.75,193.44L-31.94,80.75L3.73,45.07l112.69,112.69L80.75,193.44z M193.44,80.75L80.75-31.94L45.07,3.73
+				l112.69,112.69L193.44,80.75z M231.94,42.24l-74.18-74.18L122.08,3.73l74.18,74.18L231.94,42.24z M3.73,122.08l-35.68,35.68
+				l74.18,74.18l35.68-35.68L3.73,122.08z M234.77,45.07l-189.7,189.7L100,289.7L289.7,100L234.77,45.07z M154.93,119.25
+				L22.99-12.69l-35.68,35.68l131.94,131.94L154.93,119.25z"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="621.5986" y1="-113.0574" x2="784.9673" y2="-113.0574" gradientTransform="matrix(-0.7071 -0.7071 0.7071 -0.7071 619.4797 536.6054)">
+			<stop  offset="0" style="stop-color:#07642A"/>
+			<stop  offset="1" style="stop-color:#B7DE0A"/>
+		</linearGradient>
+		<polygon class="st1" points="3.73,42.24 119.25,157.76 80.75,196.27 -34.77,80.75 		"/>
+		
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="621.5986" y1="-4.1454" x2="784.9673" y2="-4.1454" gradientTransform="matrix(-0.7071 -0.7071 0.7071 -0.7071 619.4797 536.6054)">
+			<stop  offset="0" style="stop-color:#FF5F11"/>
+			<stop  offset="1" style="stop-color:#FFAF00"/>
+		</linearGradient>
+		<polygon class="st2" points="80.75,-34.77 196.27,80.75 157.76,119.25 42.24,3.73 		"/>
+		
+			<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="621.5986" y1="50.3107" x2="730.5113" y2="50.3107" gradientTransform="matrix(-0.7071 -0.7071 0.7071 -0.7071 619.4797 536.6054)">
+			<stop  offset="3.724391e-03" style="stop-color:#960000"/>
+			<stop  offset="1" style="stop-color:#F97A62"/>
+		</linearGradient>
+		<polygon class="st3" points="157.76,-34.77 234.77,42.24 196.27,80.75 119.25,3.73 		"/>
+		
+			<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="95.2875" y1="621.461" x2="204.2001" y2="621.461" gradientTransform="matrix(0.7071 0.7071 -0.7071 0.7071 356.5413 -368.3119)">
+			<stop  offset="0" style="stop-color:#5A5E5E"/>
+			<stop  offset="1" style="stop-color:#1B1E1D"/>
+		</linearGradient>
+		<polygon class="st4" points="3.73,119.25 80.75,196.27 42.24,234.77 -34.77,157.76 		"/>
+		
+			<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="204.2005" y1="512.5485" x2="285.885" y2="512.5485" gradientTransform="matrix(0.7071 0.7071 -0.7071 0.7071 356.5413 -368.3119)">
+			<stop  offset="0" style="stop-color:#1B1E1D"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</linearGradient>
+		<polygon class="st5" points="234.77,42.24 292.53,100 100,292.53 42.24,234.77 		"/>
+		
+			<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="621.5986" y1="-58.6014" x2="812.1949" y2="-58.6014" gradientTransform="matrix(-0.7071 -0.7071 0.7071 -0.7071 619.4797 536.6054)">
+			<stop  offset="0" style="stop-color:#FFD903"/>
+			<stop  offset="1" style="stop-color:#FFFBA8"/>
+		</linearGradient>
+		<polygon class="st6" points="22.99,-15.52 157.76,119.25 119.25,157.76 -15.52,22.99 		"/>
+	</g>
+</g>
+</svg>

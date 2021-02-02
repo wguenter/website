@@ -1,0 +1,82 @@
+Call for Participation
+
+The 7th International Symposium on Visual Information Communication and Interaction (VINCI14) will be held on August 5-8 in Sydney, Australia. VINCI14 aims to provide an international forum for researchers and industrial practitioners to discuss the state of the art in visual communication theories, designs, and applications.
+
+
+1. Papers and Posters
+
+Authors are invited to submit original and unpublished research and practical applications in all areas of visual communication and interaction. Suggested topics include, but are not limited to:
+
+Area 1: Visualization methodologies
+
+Information visualization
+Graph drawing and visualization
+Cognitive aspects of visual information comprehension
+Visual metaphors and symbols
+Usability or empirical study of new visual metaphors
+Design theory in the digital age
+Aesthetics in visual communication and digital media
+Interaction methods (touch-based, haptic, vision-based, multi-modality
+Big Data
+Visual languages
+Diagrams
+Art + Science
+
+Area 2: Visualization applications
+
+Visual Analytics
+Sketching
+Graphical user interface design
+Software visualization
+Visual approaches to knowledge discovery
+Visualization on mobile devices
+Animation
+Game design
+Biological visualizations
+
+Area 3: Visual design and art
+
+Interaction design
+Interactive art
+Infographie and data-driven art
+Visual perception and cognition
+Multimedia
+Virtual actors
+Interactive storytelling
+Augmented reality and its applications
+Virtual reality and its applications
+Computational (or digital) aesthetics
+Wearable computers
+Ubiquitous / responsive environments
+Entertainment technology
+
+Papers can be submitted as long papers, short papers and posters. All accepted papers, including workshop papers, will be published by ACM Press and made available in the ACM Digital Library, as has been the case in previous years. Like VINCI 2010, 2011, 2012 and 2013 papers, accepted 2014 papers will be EI-indexed. High number of selected papers will be published in special issues of appropriate journals including the International Journal of Software Engineering and Knowledge Engineering (IJSEKE) and International Journal of Software and Informatics (IJSI). 
+
+
+2. Workshops and Tutorials
+
+VINCI14 is also soliciting proposals for full-day and half-day workshops and tutorials on topics that address areas of interest to the community. Workshops and tutorials will be held on August 5, 2014.  Proposals should be a maximum of 2 pages and should include:
+
+Outline of the topic 
+A proposed agenda 
+A brief bio of the convenors
+A list of any requirements for running the workshop or tutorial, such as access to computer labs, data projectors, group work-tables.
+
+Proposals, and any queries, should be sent by email to: vinci2014@easychair.org
+
+
+3. Important Dates:
+
+Workshop proposals: March 25, 2014.
+Tutorial proposals: March 25, 2014
+Long papers: April 8, 2014
+Short papers: April 8, 2014
+Posters: May 20, 2014
+
+
+
+--
+VINCI14 Organizing committee
+August 5-8, 2014, Sydney Australia
+Email: info@vinci-conf.org
+Web: http://www.vinci-conf.org/

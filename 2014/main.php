@@ -1,0 +1,97 @@
+<h1><b>Welcome to VINCI'14</b></h1>
+
+
+
+<p>
+The 7th International Symposium on Visual Information Communication and Interaction (VINCI 2014) provides an international forum for researchers and industrial practitioners to discuss the state of the art in visual communication theories, designs, and applications. VINCI has been previously held in Shanghai (VINCI'2008), Sydney (VINCI'2009), Beijing (VINCI'2010), Hong Kong (VINCI'2011), Hangzhou (VINCI'2012) and Tianjin (VINCI'2013). VINCI '2014 will be held on 
+August 5-8, 2014 in Sydney, Australia.
+</p>
+<p>
+<span style="color: rgb(34, 34, 34); font-family: Times New Roman; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+<span class="Apple-converted-space">
+<img border="0" src="in.jpg" width="47" height="43">&nbsp;
+<a href="http://www.linkedin.com/groups/VINCIConf-5170827/about">LinkedIn </a>
+</span><a href="http://www.linkedin.com/groups/VINCIConf-5170827/about">
+VINCI-Conf</a><span class="Apple-converted-space">&nbsp;is on! </span>please join the 
+discussion group, and share your opinions on how to promote and improve the 
+conference, and get the latest news about the conference.</span></p>
+
+<table border="1" width="98%" style="border-width: 0px">
+	<tr>
+		<td width="461" style="border-style: none; border-width: medium">
+		<h2>Important Dates:</h2>
+		</td>
+		<td style="border-style: none; border-width: medium">
+		<h2>News:</h2>
+		</td>
+	</tr>
+	<tr>
+		<td width="461" style="border-style: none; border-width: medium"><b>- Submission of 
+		workshop/tutorial proposals</b>: March 25, 2014 
+<p><b>- Notification of proposal acceptance</b>: April 1, 2014 </p>
+&nbsp;<p><b>- Submission of long/short papers</b>: <strike>April 8 </strike>
+		<font color="#FF0000">April 22</font>, 2014 
+</p>
+<p><b>- Notification of paper acceptance</b>: May 26, 2014 </p>
+<p>&nbsp;</p>
+<p><b>- Submission of posters</b>: May 20, 2014</p>
+<p><b>- Notification of poster acceptance</b>: June 1, 2014 </p>
+<p>&nbsp;</p>
+<p><b>- Camera-ready copy due</b>: June 9, 2014 </p>
+<p><b>- Symposium dates</b>: August 6-8, 2014</p>
+		</td>
+		<td align="left" valign="top" style="border-style: none; border-width: medium" rowspan="2">
+
+		<p>- August 11, 2014: The keynote talk of Professor Peter Eades:
+		<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-family: Times New Roman; color: rgb(0, 0, 0); letter-spacing: normal; orphans: auto; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<span class="Apple-converted-space">&nbsp;</span></span><a href="http://rp-www.cs.usyd.edu.au/~peter/vinci_v1.pdf">Applications 
+		of the weighted barycentre algorithm</a></p>
+		<p>- August 1, 2014: <a href="http://vinci-conf.org/?page=venue">How to 
+		get to the conference site</a>.</p>
+		<p>- August 1, 2014: <font color="#FF0000"><b><a href="http://www.vinci-conf.org/?page=program">Final program</a> is up online</b></font>. </p>
+		<p>- August 1, 2014: We are pleased to have
+		<a href="http://www.viewingspace.com/">Professor Ruth West</a> from 
+		University of North Texas for a plenary talk.</p>
+<p>
+- July 15, 2014: We are having our conference dinner at <a href="http://www.captaincook.com.au/sydney-harbour-cruises">Captain Cook Cruises</a> at Sydney Harbour. 
+Be prepared to be spoiled by an extensive array of international 
+cuisine with stunning night harbor&nbsp;views of the iconic Sydney Opera House and 
+Harbor Bridge!<br /> <br />
+<IMG SRC="http://www.captaincook.com.au/assets/images-syd-1170x430/979/sydch-formal3-b_banner.jpg" ALT="" WIDTH=465 HEIGHT=185>
+</p>
+		- Posters are due on May 20. 
+		Accepted posters will be published in ACM DL, together with full and short 
+		papers. <p>- Record number of submissions received! We look forward to a high quality and exciting technical program 
+		ahead. 
+		</p>
+		<p>- Last chance to submit! the 
+		submission will remain open until end of April 27 while we are 
+		organizing reviewers. </p>
+		<p>- Paper deadline extended to April 22, 2014!</p>
+		<p>- March 6, 2014:
+		<span style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">
+		it has been confirmed that</span><b style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span></b><span style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">a 
+		high number of selected papers will be published in a special issue of</span><b style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span></b><a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" href="http://www.worldscientific.com/worldscinet/ijseke">International 
+		Journal of Software Engineering and Knowledge Engineering</a><b style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span></b><span style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">(IJSEKE, 
+		SCI indexed)<span class="Apple-converted-space">&nbsp;</span></span><span style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">and 
+		a special issue of</span><b style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span></b><a style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" href="http://www.ijsi.org/ch/index.aspx">International 
+		Journal of Software and Informatics</a><b style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span></b><span style="color: rgb(9, 18, 52); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">(IJSI).</span></p>
+		<p>
+		- March 6, 2014: VINCI14 Proceedings will be published by ACM press and 
+		appear in ACM Digital Library (EI indexed).</p>
+		<p>- Jan 2, 2014: First <a href="http://vinci-conf.org/?page=call">CFP</a> 
+		sent.</p>
+		<p>- Dec 7, 2013:&nbsp; <a href="http://www.vinci-conf.org/?page=panel">Keynote speakers</a> announced.</p>
+		<p>- Dec 1, 2013:&nbsp; 
+		<a href="http://www.vinci-conf.org/?page=committee">Program committee</a> announced.</p>
+		<p>- Nov 4, 2013:&nbsp; the VINCI14 website is up online.</p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="461" style="border-style: none; border-width: medium">
+		<h2>Links of Interest</h2>
+		<p><a href="https://sites.google.com/site/vlhcc2014/">VL/HCC 2014</a></p>
+		<p><a href="http://www.diagrams-conference.org/2014/home">DIAGRAMS 2014</a></td>
+	</tr>
+</table>
+

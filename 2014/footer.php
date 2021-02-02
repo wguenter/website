@@ -1,0 +1,1 @@
+<center><h1>The 7th International Symposium on Visual Information Communication and Interaction, Sydney, Australia, <b><a href="mailto:info@cmls-conf.org">info@vinci-conf.org</b></h1></center><br />

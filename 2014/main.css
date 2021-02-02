@@ -1,0 +1,99 @@
+@charset "utf-8";
+body  {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	background: #ffffff url(bg.gif) top left fixed repeat-x;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #091234;
+	font-size: 14px;
+}
+#container { 
+	width: 900px;  
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 0px solid #ced5e6;
+	text-align: left; 
+} 
+#header { 
+	background: #ffffff; 
+	padding: 0px 0px 5px 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+#header h1 {
+	margin: 0; 
+	padding: 10px 0; 
+}
+#sidebar1 {
+	float: left; 
+	width: 160px; 
+	background: #ffffff; 
+	padding: 10px 10px 15px 10px; 
+	border: 1px solid #ffffff;
+}
+#mainContent { 
+	float: right;
+	width: 880px;
+	margin: 0 10px; 
+	padding: 0 0px; 
+	border: 1px solid #ffffff;
+} 
+#footer { 
+	padding: 0 10px 0 20px; 
+	background:#ffffff;
+} 
+#footer p {
+	margin: 0; 
+	padding: 10px 0; 
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+h1 {
+	font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	color: #003399;
+}
+h2 {
+	font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	color: #003399;
+}
+h3 {
+	font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: #003399;
+}
+
+#footer h1 {
+	font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 12px;
+}
+
+#welcomeBox {
+	position: relative;
+	color: #ffcc33;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-left: 0px;
+	padding-top: 1px;
+	font-size: 12px;
+	padding-bottom: 1px;
+}

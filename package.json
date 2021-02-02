@@ -4,7 +4,10 @@
     "description": "",
     "devDependencies": {
         "copy-webpack-plugin": "^6.4.1",
+        "favicons": "^6.2.0",
+        "favicons-webpack-plugin": "^4.2.0",
         "html-webpack-plugin": "^4.5.1",
+        "html-webpack-skip-assets-plugin": "0.0.2",
         "pug": "^3.0.0",
         "pug-loader": "^2.4.0",
         "style-loader": "^2.0.0",

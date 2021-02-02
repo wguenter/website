@@ -1,13 +1,15 @@
 'use strict';
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const pageList = require('./pages.json');
 const confInfo = require('./conferenceInfo.json');
 
-const pages = function () {
-    return pageList.map((p) => {
-        return {
+module.exports = function (env) {
+    const pages = pageList.map((p) => {
+        return new HtmlWebpackPlugin({
             title: p.title,
             filename: p.url + '.html',
             template: './source/pug/' + p.url + '.pug',
@@ -16,18 +18,17 @@ const pages = function () {
                 activePage: p,
                 conf: confInfo
             }
-        };
+        });
     });
-}
-
-const common = function (env) {
     const plugins = [
+        ...pages,
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'source/css', to: '.' },
                 { from: 'source/img', to: '.', }
             ]
-        })
+        }),
+        new FaviconsWebpackPlugin('./source/img/logo/vinci-logo-v2.png')
     ];
 
     return {
@@ -54,5 +55,3 @@ const common = function (env) {
         plugins
     };
 }
-
-module.exports = { pages, common };

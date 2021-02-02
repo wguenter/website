@@ -1,17 +1,19 @@
 'use strict';
 
 const { merge } = require('webpack-merge');
-const { pages, common } = require('./webpack.common.js');
+const common = require('./webpack.common.js');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { HtmlWebpackSkipAssetsPlugin } =
+    require('html-webpack-skip-assets-plugin');
 
 module.exports = function (env) {
-    const plugins = pages().map((p) => {
-        p.inject = false;
-        return new HtmlWebpackPlugin(p);
-    });
-    return merge(common(env), {
-        plugins,
-        mode: 'production'
-    });
+    const plugins = [
+        new HtmlWebpackSkipAssetsPlugin({
+            skipAssets: [/.*\.js/]
+        })
+    ];
+    return merge(
+        common(env),
+        { plugins, mode: 'production' }
+    );
 };

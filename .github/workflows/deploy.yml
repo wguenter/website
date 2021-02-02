@@ -33,7 +33,7 @@ jobs:
       - name: Check out website archive
         uses: actions/checkout@v2
         with:
-          repo: vinci-conf/website-archive
+          repository: vinci-conf/website-archive
           path: archive
       - name: Copy archive to output
         run: cp -r archive/* deploy

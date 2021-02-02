@@ -22,10 +22,7 @@ jobs:
           ref: deploy
           path: deploy
       - name: Clean up output
-        run: rm -rf *
-        working-directory: deploy
-      - name: Echo output contents
-        run: ls -A
+        run: git rm -rf *
         working-directory: deploy
       - name: Set up dependencies
         run: npm install

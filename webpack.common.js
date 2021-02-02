@@ -1,7 +1,6 @@
 'use strict';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const pageList = require('./pages.json');
@@ -22,14 +21,14 @@ module.exports = function (env) {
     });
     const plugins = [
         ...pages,
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: 'source/css', to: '.' },
-                { from: 'source/img', to: '.', }
-            ]
-        }),
         new FaviconsWebpackPlugin('./source/img/logo/vinci-logo-v2.png')
     ];
+
+    const flOptions = {
+        esModule: false,
+        // add short hash to avoid name collision
+        name: '[name]_[md5:hash:hex:4].[ext]'
+    }
 
     return {
         entry: './source/pug/index.pug',
@@ -37,18 +36,31 @@ module.exports = function (env) {
             rules: [
                 {
                     test: /\.pug$/,
-                    use: {
-                        loader: 'pug-loader'
-                    },
+                    use: [
+                        {
+                            loader: 'pug-loader'
+                        }
+                    ]
                 },
                 {
                     test: /\.css$/,
                     use: [
                         {
-                            loader: 'style-loader'
-                        }, {
-                            loader: 'css-loader'
-                        }],
+                            loader: 'file-loader',
+                            options: flOptions
+                        },
+                        { loader: 'extract-loader' },
+                        { loader: 'css-loader' },
+                    ]
+                },
+                {
+                    test: /\.(png|jpe?g|svg)$/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: flOptions
+                        }
+                    ]
                 },
             ],
         },

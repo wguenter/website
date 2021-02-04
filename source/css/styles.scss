@@ -200,10 +200,18 @@ img.brand-logo {
   filter: drop-shadow(0 0 0.25rem rgba(white, 0.5));
 }
 
-.nav-link {
+.nav-link, .dropdown-item {
   @extend .text-uppercase;
   &.active {
     color: $vinci-color-dark;
+  }
+}
+
+.dropdown-item {
+  font-weight: $font-weight-base;
+  color: $vinci-color-light;
+  &:hover {
+    color: $link-hover-color;
   }
 }
 
@@ -219,8 +227,7 @@ span.navbar-toggler-icon {
     background: white;
     margin-bottom: 4px;
     border-left: 4px $vinci-color-lighter solid;
-    margin-left: -8px;
-    padding-left: 8px;
+    padding-left: 1.0rem;
     @extend .py-2;
 
     &:hover {

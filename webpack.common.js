@@ -1,27 +1,29 @@
 'use strict';
 
+const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const pageList = require('./pages.json');
-const confInfo = require('./conferenceInfo.json');
+const confInfo = require('./conference.json');
 
 module.exports = function (env) {
-    const pages = pageList.map((p) => {
+    const pages = pageList.map((page) => {
         return new HtmlWebpackPlugin({
-            title: p.title,
-            filename: p.url + '.html',
-            template: './source/pug/' + p.url + '.pug',
+            title: page.title,
+            filename: page.url + '.html',
+            template: './source/' + page.url + '.pug',
             templateParameters: {
                 pages: pageList,
-                activePage: p,
-                conf: confInfo
+                active: page,
+                conference: confInfo
             }
         });
     });
     const plugins = [
         ...pages,
-        new FaviconsWebpackPlugin('./source/img/logo/vinci-logo-v2.png')
+        new FaviconsWebpackPlugin('./source/img/vinci-logo.png')
     ];
 
     const flOptions = {
@@ -31,7 +33,10 @@ module.exports = function (env) {
     }
 
     return {
-        entry: './source/pug/index.pug',
+        entry: './source/index.pug',
+        resolve: {
+            modules: ['source', 'node_modules'],
+        },
         module: {
             rules: [
                 {
@@ -43,18 +48,22 @@ module.exports = function (env) {
                     ]
                 },
                 {
-                    test: /\.css$/,
+                    test: /\.scss$/,
                     use: [
                         {
                             loader: 'file-loader',
-                            options: flOptions
+                            options: {
+                                esModule: false,
+                                name: '[name].css'
+                            }
                         },
                         { loader: 'extract-loader' },
-                        { loader: 'css-loader' },
-                    ]
+                        { loader: "css-loader", options: { url: false, importLoaders: 1 } },
+                        { loader: 'sass-loader' },
+                    ],
                 },
                 {
-                    test: /\.(png|jpe?g|svg)$/,
+                    test: /\.(png|jpe?g|svg|woff|woff2|eot|ttf)$/,
                     use: [
                         {
                             loader: 'file-loader',

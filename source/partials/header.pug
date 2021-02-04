@@ -1,0 +1,35 @@
+
+section#header.container
+  .row.justify-content-center
+    .col-conf
+
+      #carousel(data-bs-ride = 'carousel').carousel.slide.carousel-fade
+        .carousel-inner(data-bs-interval = '8000')
+          .carousel-item.active
+            img(src = require('img/photos/header-nikolaikirche.jpg') alt = 'potsdam-nikolaikirche').d-block.w-100
+          .carousel-item
+            img(src = require('img/photos/header-hpi-hauptgebaeude.jpg') alt = 'hpi-hauptgebaeude').d-block.w-100
+          .carousel-item
+            img(src = require('img/photos/header-sans-souci.jpg') alt = 'potsdam-sans-souci').d-block.w-100
+          .carousel-item
+            img(src = require('img/photos/header-hpi-foyer.jpg') alt = 'hpi-foyer').d-block.w-100
+          .carousel-item
+            img(src = require('img/photos/header-glienicke.jpg') alt = 'potsdam-glienicke').d-block.w-100
+
+      p.title
+        a(href = 'index.html')
+          | The #{conference.number}#[sup #{conference.ordinal}] #{conference.title} (#{conference.short} #{conference.year})
+
+      p.sub-title
+        | #{conference.location}, #{conference.date} #{conference.year}
+
+  .row.justify-content-center.d-block.d-sm-none
+    .col-lg-8.col-sm.mt-3
+
+      p
+        strong
+          a(href = 'index.html')
+            | The #{conference.number}#[sup #{conference.ordinal}] #{conference.title} (#{conference.short} #{conference.year})
+
+      p.text-end
+        | #{conference.location}, #{conference.date} #{conference.year}

@@ -19,10 +19,9 @@ section.container
           a(data-bs-toggle = 'dropdown' href = '#' role = 'button' aria-expanded = 'false').nav-link.dropdown-toggle #[span.navbar-toggler-icon.me-2] Navigation 
           ul.dropdown-menu
             each page in pages
-              if(page.url != pages[0].url)             
-                li
-                  if(page.url === active.url)
-                    .active
-                    a(href= page.url + '.html').dropdown-item.disabled= page.title
-                  else
-                    a(href= page.url + '.html').dropdown-item= page.title
+              li
+                if(page.url === active.url)
+                  .active
+                  a(href= page.url + '.html').dropdown-item.disabled= page.title
+                else
+                  a(href= page.url + '.html').dropdown-item= page.title

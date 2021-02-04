@@ -23,7 +23,7 @@ module.exports = function (env) {
     });
     const plugins = [
         ...pages,
-        new FaviconsWebpackPlugin('./source/img/vinci-logo.png')
+        new FaviconsWebpackPlugin('./source/img/vinci-logo-sm.svg')
     ];
 
     return {

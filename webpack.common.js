@@ -26,12 +26,6 @@ module.exports = function (env) {
         new FaviconsWebpackPlugin('./source/img/vinci-logo.png')
     ];
 
-    const flOptions = {
-        esModule: false,
-        // add short hash to avoid name collision
-        name: '[name]_[md5:hash:hex:4].[ext]'
-    }
-
     return {
         entry: './source/index.pug',
         resolve: {
@@ -58,7 +52,13 @@ module.exports = function (env) {
                             }
                         },
                         { loader: 'extract-loader' },
-                        { loader: "css-loader", options: { url: false, importLoaders: 1 } },
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                url: true,
+                                importLoaders: 1
+                            }
+                        },
                         { loader: 'sass-loader' },
                     ],
                 },
@@ -67,7 +67,10 @@ module.exports = function (env) {
                     use: [
                         {
                             loader: 'file-loader',
-                            options: flOptions
+                            options: {
+                                esModule: false,
+                                name: '[name]_[md5:hash:hex:4].[ext]'
+                            }
                         }
                     ]
                 },

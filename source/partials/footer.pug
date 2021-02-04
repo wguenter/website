@@ -1,0 +1,45 @@
+
+section#footer.container
+  .row.justify-content-center
+    .col-lg-8.col-md-10.col-sm.mb-3
+      +h2('')
+
+  .row.justify-content-center
+    .col-lg-2.col-md-5.col-sm-6
+      p.mb-3.clearfix
+        a(href = 'https://www.acm.org/publications/icps-series') #[img(src = require('img/icps-logo.svg')).logo]
+      
+      p.mb-5
+        small Published by ACM International Conference Proceedings Series
+
+
+    .col-lg-2.col-md-5.col-sm-6
+      p.mb-3.clearfix
+        a(href = 'https://www.acm.org/publications/icps-series') #[img(src = require('img/vsj-logo-unofficial.svg')).logo]
+      p.mb-5
+        small In cooperation with the Visualization Society of Japan.
+
+
+    .col-lg-4.col-md-10.col-sm
+      p.mb-3.clearfix
+        a(href = 'https://hpi.de/') #[img(src = require('img/hpi-logo.svg')).logo]
+        small 
+          | Hasso Plattner Institute
+          br 
+          | University of Potsdam
+          br
+          | Prof.-Dr.-Helmert-Straße 2-3
+          br
+          | 14482 Potsdam, Germany
+
+      p.mb-5
+        small HPI is responsible for website, organization, and venue. Contact us via 
+          | email #[a(href = 'mailto:info@vinci-conf.org') info@vinci-conf.org] or
+          | phone #[a(href = 'tel:+4933155093907') +49 331 5509-3907].
+
+
+footer.text-center
+  small Copyright &copy; #{conference.year} #{conference.short}
+
+
+script(src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js' integrity = 'sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW' crossorigin = 'anonymous')

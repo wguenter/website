@@ -23,7 +23,7 @@ $vinci-color-lighter: #74C2C8;
 $secondary: $vinci-color-light;
 
 $link-color: $vinci-color-light;
-$link-decoration: none; 
+$link-decoration: none;
 
 $nav-link-padding-x: 0.0rem;
 
@@ -39,7 +39,6 @@ p {
 }
 
 #header {
-  
   #carousel {
     z-index: -1;
   }
@@ -47,12 +46,11 @@ p {
   p.title, p.sub-title {
     background: rgba(black, 0.6666);
     @extend .position-relative;
-    @extend .px-3;
     @extend .py-1;
     @extend .mx-3;
     @extend .d-none;
     @extend .d-sm-block;
-    
+
     color: white;
     a {
       color: white;
@@ -60,11 +58,13 @@ p {
   }
 
   p.title {
-    width: 76%;
+    max-width: 75%;
+    @extend .px-3;
     @extend .float-start;
   }
   p.sub-title {
-    width: 42%;
+    width: auto;
+    @extend .px-2;
     @extend .text-end;
     @extend .float-end;
   }
@@ -139,7 +139,7 @@ h1 {
   @extend .text-uppercase;
   color: $vinci-color-dark;
 
-  @extend .my-5; 
+  @extend .my-5;
 }
 
 h2 {
@@ -148,7 +148,7 @@ h2 {
   color: $vinci-color-light;
   // @extend .text-muted;
   @extend .mt-5;
-  @extend .mb-3; 
+  @extend .mb-3;
 }
 
 h2 img {
@@ -162,7 +162,7 @@ h2 img {
 h3 {
   @extend .text-uppercase;
   font-weight: 700;
-  font-size: $font-size-base * 1.0; 
+  font-size: $font-size-base * 1.0;
 }
 
 hr {
@@ -179,7 +179,7 @@ dt {
 
 footer {
   @extend .mt-5;
-  @extend .mb-3; 
+  @extend .mb-3;
 }
 
 #footer img.logo {
@@ -199,7 +199,7 @@ footer {
 .nav-link {
   @extend .text-uppercase;
   &.active {
-    color: $vinci-color-dark; 
+    color: $vinci-color-dark;
   }
 }
 
@@ -209,7 +209,7 @@ span.navbar-toggler-icon {
 
 .dropdown-menu {
   border: none;
-  background: none; 
+  background: none;
 
   .dropdown-item {
     background: white;
@@ -226,7 +226,7 @@ span.navbar-toggler-icon {
 }
 
 .col-conf {
-  @extend .col-lg-8; 
+  @extend .col-lg-8;
   @extend .col-md-10;
   @extend .col-sm;
 }

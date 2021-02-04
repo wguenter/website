@@ -1,16 +1,20 @@
 @charset "utf-8";
 
-@import "fonts";
+@import "~roboto-fontface/css/roboto/roboto-fontface.css";
+// $roboto-font-path: 'node_modules/roboto-fontface/fonts';
+// @import "~roboto-fontface/css/roboto/sass/roboto-fontface-bold";
+// @import "~roboto-fontface/css/roboto/sass/roboto-fontface-regular";
 
 
 $enable-flex: true;
 $enable-rounded: true;
 
 $font-family-sans-serif: 'Roboto';
-$font-family-monospace: 'Roboto Mono';
+// $font-family-monospace: 'Roboto Mono';
 
 $headings-font-weight: 300;
-$font-weight-bold: 700;
+$font-weight-base: 300 !default;
+$font-weight-bolder: 700 !default;
 
 $link-hover-decoration: none;
 

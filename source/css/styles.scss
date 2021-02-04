@@ -143,7 +143,7 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-base * 1.75;
+  font-size: $font-size-base * 1.28;
   @extend .text-uppercase;
   color: $vinci-color-light;
   // @extend .text-muted;
@@ -152,10 +152,10 @@ h2 {
 }
 
 h2 img {
-  height: $font-size-base * 2.0;
+  height: $font-size-base * 1.28;
   vertical-align: baseline;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.125rem;
   padding-right: 0.5rem;
 }
 
@@ -169,7 +169,7 @@ hr {
   @extend .text-muted;
   float: none !important;
   position: relative;
-  top: 1.0rem;
+  top: 0.8rem;
 }
 
 dt {
@@ -188,12 +188,12 @@ footer {
   @extend .me-3;
 }
 
-.navbar-brand a {
-  @extend .ps-0;
-  img {
-    height: 2.0rem;
-    width: 2.0rem;
-  }
+img.brand-logo {
+  float: right;
+  width: 5.0rem;
+  margin-bottom: -5.0rem;
+  padding: 1.0rem;
+  filter: drop-shadow(0 0 0.25rem rgba(white, 0.5));
 }
 
 .nav-link {

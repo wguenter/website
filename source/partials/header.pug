@@ -1,7 +1,9 @@
 
 section#header.container
-  .row.justify-content-center
+  .row.justify-content-center.mt-4
     .col-conf
+
+      img(src = require('img/vinci-logo.svg')).brand-logo
 
       #carousel(data-bs-ride = 'carousel').carousel.slide.carousel-fade
         .carousel-inner(data-bs-interval = '8000')
@@ -23,12 +25,17 @@ section#header.container
       p.sub-title
         | #{conference.location}, #{conference.date} #{conference.year}
 
-  .row.justify-content-center.d-block.d-sm-none
+
+include navbar
+
+
+section#header.container.d-block.d-sm-none
+  .row.justify-content-center
     .col-lg-8.col-sm.mt-3
 
       p
         strong
-          a(href = 'index.html')
+          a(href = 'index.html').text-body
             | The #{conference.number}#[sup #{conference.ordinal}] #{conference.title} (#{conference.short} #{conference.year})
 
       p.text-end

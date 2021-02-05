@@ -5,7 +5,7 @@ block content
   section.container
 
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
 
         +h2('Hasso Plattner Institute')
         p
@@ -20,29 +20,30 @@ block content
           | and #[span.fst-italic Cybersecurity]. In addition, HPI offers a supplemental study program in the innovation
           | method of #[span.fst-italic Design Thinking].
 
-        p
-          figure.figure
-            a(href = 'https://www.google.com/maps/@52.391877,13.1318504,257a,35y,357.61h,39.73t/data=!3m1!1e3')
-              img(src = require('img/photos/gmaps-hpi-campus.jpg') alt = 'gmaps-hpi-campus').figure-img.img-fluid
-            figcaption.figure-caption.text-end #[small Click on the image to visit google maps at +52.391877+13.1318504/ (HPI campus).]
+        h3 HPI Campus
+
+        figure.figure.mt-1
+          a(href = 'https://www.google.com/maps/@52.391877,13.1318504,257a,35y,357.61h,39.73t/data=!3m1!1e3')
+            img(src = require('img/photos/gmaps-hpi-campus.jpg') alt = 'gmaps-hpi-campus').figure-img.img-fluid
+          figcaption.figure-caption.text-end #[small Click/touch the map to visit google maps at +52.391877+13.1318504/.]
 
 
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
   
         +h2('Transportation')
         p More information will follow in the coming days and weeks.
 
 
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
         
         +h2('Accomodation')
         p More information will follow in the coming days and weeks.
 
 
     .row.justify-content-center
-      .col-conf   
+      .col-custom.col-padding
 
         +h2('Attractions in Potsdam & Berlin')
         p More information will follow in the coming days and weeks.

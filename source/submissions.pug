@@ -4,43 +4,64 @@ block content
 
   section.container
 
+    // important dates are defined in conference.json
+    mixin deadline(dates, remark)
+      if(dates.length === 0)
+        span.text-muted tba
+      else 
+        each date in dates
+          if(date != dates[dates.length - 1])
+            span.revised.text-decoration-line-through.me-2= date
+        span(data-deadline = dates[dates.length - 1]).deadline #{dates[dates.length - 1]}
+        sup(data-daysleft = dates[dates.length - 1]).daysleft.ms-2
+        if(remark)
+          span.remark.text-muted.float-end |&ensp;#{remark}
+
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
 
         +h2('Important Dates')
-        
-        table.col-12.table.table-sm.table-hover
-          tbody
-            tr.table-warning
-              td Workshop proposal deadline
-              td tba
-            tr.table-warning
-              td Tutorial proposal deadline
-              td tba
-            tr.table-warning
-              td Full Paper submission deadline
-              td tba
-            tr.table-warning
-              td Short Paper submission deadline
-              td tba
-            tr.table-warning
-              td Poster (2 pages max) submission deadline
-              td tba
-            tr.table-warning
-              td Notification of acceptance (papers & posters)
-              td tba
-            tr.table-warning
-              td Camera-ready copy deadline (papers & poster)
-              td tba
-            tr.table-warning
-              td Registration deadline
-              td tba
-            tr
-              td Symposium
-              td September 6-8, 2021
+
+        dl.conf-dates
+
+          dt Full Paper Submission
+          dd
+            +deadline(conference.dates.full_paper, '')
+
+          dt Short Paper Submission
+          dd
+            +deadline(conference.dates.short_paper, '')
+          
+          dt Poster Submission
+          dd.mb-3
+            +deadline(conference.dates.poster, '')
+
+          dt Notification of Acceptance
+          dd
+            +deadline(conference.dates.notification, 'Paper & Poster')
+          
+          dt Camera-ready Copy
+          dd.mb-3
+            +deadline(conference.dates.camera_ready, 'Paper & Poster')
+          
+          dt Workshop Proposal
+          dd 
+            +deadline(conference.dates.workshop, '')
+
+          dt Tutorial Proposal
+          dd.mb-3
+            +deadline(conference.dates.tutorial, '')
+
+          dt Registration
+          dd
+            +deadline(conference.dates.registration, '')
+          
+        script
+          include js/until.js
+  
 
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
 
         +h2('Scope & Topics')
         p 
@@ -50,9 +71,7 @@ block content
           | and design aspects, underlying theories, taxonomies, implementation work, tool support,
           | and case studies. Topics of interest include but are not limited to the following:
     
-    .row.justify-content-center
-      .col-12.col-md-10.col-lg-4
-        ul.list.mb-xs-0.mb-sm-0
+        ul
           li.list-item Aesthetics in visual communication
           li.list-item Empirical studies of novel visual metaphors
           li.list-item Cognitive aspects of visual information comprehension
@@ -63,9 +82,6 @@ block content
           li.list-item Computational aesthetics
           li.list-item Visual interaction through multimodality
           li.list-item Graphical user interface design
-        
-      .col-12.col-md-10.col-lg-4
-        ul.list
           li.list-item Visual modeling languages and UML
           li.list-item Influence of visual arts and design
           li.list-item Visual programming languages
@@ -76,9 +92,10 @@ block content
           li.list-item Visualization on Artificial Intelligence, Machine Learning and other fields
           li.list-item Applications like SoftVis, BioVis, GeoVis, etc.
 
+
     .row.justify-content-center
-      .col-conf
-        
+      .col-custom.col-padding
+
         +h2('Paper Submission & Guidelines')
         p
           | Submissions that address research and development, as well as experience reports
@@ -93,15 +110,15 @@ block content
           | special issue of the #[a(href="https://link.springer.com/journal/12650") Journal of Visualization] (SCI indexed).
         
         p
-          | Research papers and experience reports of up to #[span.fw-bolder eight (8)], short papers of up to
-          | #[span.fw-bolder four (4)], and tool demonstrations or posters of up to #[span.fw-bolder two (2)] ACM double-column
+          | Research papers and experience reports of up to eight (8), short papers of up to
+          | four (4), and tool demonstrations or posters of up to two (2) ACM double-column
           | pages should be submitted through #[a(href="https://easychair.org/conferences/?conf=vinci2021") easychair.org]. The review process will be single-blind.
           | We appreciate the submission of videos or other supplemental material. Please provide
           | a URL at the end of the submitted paper to enable the reviewers the download of your
           | additional material. Detailed information on the electronic submission can be found at
           | the end of this page.
 
-        p 
+        p
           | All submissions (regular papers, proposals of workshops/tutorial/etc) must be formatted
           | using the #[a(href="http://www.acm.org/publications/proceedings-template") ACM Proceedings Template] (using sigconf format/template) and should consist
           | of one single PDF file (please note: the authors of accepted papers will be later requested
@@ -109,9 +126,9 @@ block content
           | length of each symposium paper is defined as follows.
 
         ul.list
-          li.list-item Full paper: up to #[span.fw-bolder eight (8)] pages (including references)
-          li.list-item Short paper: up to #[span.fw-bolder four (4)] pages (additional 1 page only for references is allowed)
-          li.list-item Poster: up to #[span.fw-bolder two (2)] pages (including references)
+          li.list-item Full paper: up to eight (8) pages (including references)
+          li.list-item Short paper: up to four (4) pages (additional 1 page only for references is allowed)
+          li.list-item Poster: up to two (2) pages (including references)
 
         p
           | NOTE: All paper submissions should be made through the #[a(href="https://easychair.org/conferences/?conf=vinci2020") EasyChair] conference management system.
@@ -119,7 +136,7 @@ block content
           | the program chairs via #[a(href="mailto:pchairs@vinci-conf.org") pchairs@vinci-conf.org].
 
     .row.justify-content-center
-      .col-conf
+      .col-custom.col-padding
         
         +h2('Workshops & Tutorials')
         p
@@ -149,9 +166,3 @@ block content
         p
           | Workshop / Tutorial / Special Session / Panel proposals should be sent via email to
           | #[a(href="mailto:proposals@vinci-conf.org?subject=VINCI 2021 - (Workshop/Tutorial/Session/Panel) Proposal Submission") proposals@vinci-conf.org]. Please add the concrete proposal type to the subject line.
-
-//-    .row.justify-content-center
-//-      .col-conf
-//-        
-//-        +h2('Special Sessions & Panels')
-//-        p More information will follow in the coming days and weeks.

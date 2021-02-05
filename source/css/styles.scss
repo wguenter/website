@@ -12,9 +12,12 @@ $enable-rounded: true;
 $font-family-sans-serif: 'Roboto';
 // $font-family-monospace: 'Roboto Mono';
 
-$headings-font-weight: 300;
 $font-weight-base: 300 !default;
 $font-weight-bolder: 700 !default;
+
+$headings-font-weight: $font-weight-base;
+$dt-font-weight: $font-weight-base !important;
+
 
 $link-hover-decoration: none;
 
@@ -43,6 +46,7 @@ p {
 }
 
 #header {
+
   #carousel {
     z-index: -1;
   }
@@ -147,7 +151,7 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-base * 1.28;
+  font-size: $font-size-base * 1.25;
   @extend .text-uppercase;
   color: $vinci-color-light;
   // @extend .text-muted;
@@ -156,7 +160,7 @@ h2 {
 }
 
 h2 img {
-  height: $font-size-base * 1.28;
+  height: $font-size-base * 1.25;
   vertical-align: baseline;
   padding-top: 0.375rem;
   padding-bottom: 0.125rem;
@@ -165,7 +169,7 @@ h2 img {
 
 h3 {
   @extend .text-uppercase;
-  font-weight: 700;
+  color: $vinci-color;
   font-size: $font-size-base * 1.0;
 }
 
@@ -179,6 +183,10 @@ hr {
 dt {
   @extend .text-muted;
   font-weight: normal;
+}
+
+#footer {
+  margin-top: 4.0rem;
 }
 
 footer {
@@ -236,8 +244,82 @@ span.navbar-toggler-icon {
   }
 }
 
-.col-conf {
+.col-custom {
   @extend .col-lg-8;
   @extend .col-md-10;
   @extend .col-sm;
+
+  h2 {
+    @extend .mt-4;
+  }
+}
+
+
+.col-padding {
+  h3, p, ul, dl, figure {
+    margin-left: 1.75rem;
+  }
+  ul:not(.list-inline) { 
+    list-style-type: none;
+    li:before {
+      content: '\2014';
+      position: absolute;
+      margin-left: -1.5rem;
+    }
+  }
+  
+
+}
+@include media-breakpoint-up(xs) {
+  .col-padding {
+    h3, p, ul, dl, figure {
+      margin-right: 5.0rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .col-padding {
+    h3, p, ul, dl, figure {
+      margin-right: 1.75rem;
+    }
+  }
+}
+
+
+dl.conf-chairs {
+  @extend .row;
+  dt {
+    @extend .col-sm-4;
+    @extend .text-sm-end;
+  }
+  dd {
+    @extend .col-sm-8;
+    ul {
+      padding-left: 0;
+      list-style: none !important;
+      li {
+        @extend .mb-1;
+      }
+    }
+  }
+}
+
+dl.conf-dates {
+  @extend .row;
+  dt {
+    @extend .col-sm-4;
+    @extend .text-sm-end;
+  }
+  dd {
+    @extend .col-sm-8;
+  }
+
+  .passed {
+    @extend .text-muted;
+    @extend .text-decoration-line-through;
+  }
+  .upcomming {
+    font-weight: $font-weight-bolder;
+  }
 }

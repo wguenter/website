@@ -6,5 +6,17 @@
     "date": "6–8 September",
     "year": "2021",
     "shortYear": "'21",
-    "location": "Potsdam, Germany"
+    "location": "Potsdam, Germany",
+
+    "dates" : {
+        "example":      [ "02/01/2021", "04/03/2021", "06/05/2021" ],
+        "workshop":     [  ],
+        "tutorial":     [  ],
+        "full_paper":   [  ],
+        "short_paper":  [  ],
+        "poster":       [  ],
+        "notification": [  ],
+        "camera_ready": [  ],
+        "registration": [  ]
+    }
 }

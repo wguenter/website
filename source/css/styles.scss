@@ -283,6 +283,9 @@ span.navbar-toggler-icon {
     h3, p, ul, dl, figure {
       margin-right: 1.75rem;
     }
+    dt, dd {
+      padding-left: 0;
+    }
   }
 }
 

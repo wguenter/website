@@ -30,14 +30,20 @@ async function stylize(imagePath) {
     }];
     data.append('pipeline', JSON.stringify(pipeline));
 
+    console.log(`post '${ imagePath }' for stylization ...`);
     const response = await axios({
         method: 'post',
         url: `${ process.env.STYLIZATION_SDK_API_URL }${ process.env.STYLIZATION_SDK_API_ROUTE }`,
         data: data,
         headers: Object.assign(Object.assign({}, headers), data.getHeaders()),
         responseType: 'stream',
-    }).then(function (response) {
+    }).then(function (response) {       
         response.data.pipe(fs.createWriteStream(imagePath));
+        console.log(`stylization '${ imagePath }' succeeded`);
+    }).catch(function (reason) {       
+        response.data.pipe(fs.createWriteStream(imagePath));
+        console.log(`stylization of '${ imagePath }' failed`);
+        console.log(`reason: ${ reason }`);
     });
 }
 

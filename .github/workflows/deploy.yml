@@ -27,6 +27,14 @@ jobs:
       - name: Set up dependencies
         run: npm install
         working-directory: src
+      - name: Stylize images
+        env:
+          STYLIZATION_SDK_API_KEY: ${{ secrets.STYLIZATION_SDK_API_KEY }}
+          STYLIZATION_SDK_API_KEY_ID: ${{ secrets.STYLIZATION_SDK_API_KEY_ID }}
+          STYLIZATION_SDK_API_ROUTE: ${{ secrets.STYLIZATION_SDK_API_ROUTE }}
+          STYLIZATION_SDK_API_URL: ${{ secrets.STYLIZATION_SDK_API_URL }}
+        run: npm run stylize
+        working-directory: src
       - name: Build website
         run: npm run build -- --output-path=../deploy
         working-directory: src

@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "devDependencies": {
+        "axios": "^0.21.1",
         "bootstrap": "^5.0.0-beta1",
         "copy-webpack-plugin": "^6.4.1",
         "css-loader": "^5.0.1",
@@ -10,6 +11,7 @@
         "favicons": "^6.2.0",
         "favicons-webpack-plugin": "^4.2.0",
         "file-loader": "^6.2.0",
+        "form-data": "^3.0.0",
         "html-webpack-plugin": "^4.5.1",
         "html-webpack-skip-assets-plugin": "0.0.2",
         "node-sass": "^5.0.0",
@@ -23,6 +25,7 @@
         "webpack-merge": "^5.7.3"
     },
     "scripts": {
+        "stylize": "node stylize.js",
         "start": "webpack-dev-server --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js"
     }

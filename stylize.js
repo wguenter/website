@@ -26,7 +26,7 @@ async function stylize(imagePath) {
     };
     const pipeline = [{
         'effectId': 'default/toon/definition/toon/1',
-        'preset': 'landscape',
+        'preset': 'realistic',
     }];
     data.append('pipeline', JSON.stringify(pipeline));
 

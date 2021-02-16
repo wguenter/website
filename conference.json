@@ -9,14 +9,18 @@
     "location": "Potsdam, Germany",
 
     "dates" : {
-        "example":      [ "02/01/2021", "04/03/2021", "06/05/2021" ],
-        "workshop":     [  ],
-        "tutorial":     [  ],
-        "full_paper":   [  ],
-        "short_paper":  [  ],
-        "poster":       [  ],
-        "notification": [  ],
-        "camera_ready": [  ],
-        "registration": [  ]
+        "example":               [ "02/01/2021", "04/03/2021", "06/05/2021" ],
+        
+        "workshop":              [ "06/21/2021" ],
+        "workshop_notification": [ "07/07/2021" ],
+        "tutorial":              [  ],
+
+        "full_paper":            [ "04/22/2021" ],
+        "short_paper":           [ "04/22/2021" ],
+        "paper_notification":    [ "06/17/2021" ],
+
+        "poster":                [ "06/25/2021" ],
+        "camera_ready":          [ "07/21/2021" ],
+        "registration":          [ "07/14/2021" ]
     }
 }

@@ -31,28 +31,34 @@ block content
           dt Short Paper Submission
           dd
             +deadline(conference.dates.short_paper, '')
-          
-          dt Poster Submission
-          dd.mb-3
-            +deadline(conference.dates.poster, '')
 
           dt Notification of Acceptance
           dd
-            +deadline(conference.dates.notification, 'Paper & Poster')
+            +deadline(conference.dates.paper_notification, 'Full & Short Paper')
+          
+          dt Poster Submission
+          dd.mb-4
+            +deadline(conference.dates.poster, '')
+
           
           dt Camera-ready Copy
-          dd.mb-3
-            +deadline(conference.dates.camera_ready, 'Paper & Poster')
+          dd.mb-4
+            +deadline(conference.dates.camera_ready, 'Full & Short Paper, Poster')
           
           dt Workshop Proposal
           dd 
             +deadline(conference.dates.workshop, '')
 
+          dt Notification of Acceptance
+          dd.mb-4
+            +deadline(conference.dates.workshop_notification, 'Workshop Proposal')
+
+
           dt Tutorial Proposal
-          dd.mb-3
+          dd.mb-4
             +deadline(conference.dates.tutorial, '')
 
-          dt Registration
+          dt Early Bird Registration
           dd
             +deadline(conference.dates.registration, '')
           

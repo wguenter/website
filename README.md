@@ -2,8 +2,8 @@
 
 #### Development & Testing
 
-Uses [pug](https://pugjs.org/api/getting-started.html) and webpack to keep the site maintainable. Requires [Node.js](https://nodejs.org/en/).
-Instead of html, the efficient pug syntax can be used to define pages as well as templates.
+To keep the website maintainable, the conference website is static and built using [pug](https://pugjs.org/api/getting-started.html) (used to define pages as well as templates with more efficient syntax) and webpack.
+In addition, development requires [Node.js](https://nodejs.org/en/).
 
 - First, run `npm install` to fetch all dependencies.
 - Starting development server: `npm start`

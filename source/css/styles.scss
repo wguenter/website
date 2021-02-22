@@ -267,9 +267,8 @@ span.navbar-toggler-icon {
       margin-left: -1.5rem;
     }
   }
-  
-
 }
+
 @include media-breakpoint-up(xs) {
   .col-padding {
     h3, p, ul, dl, figure {
@@ -286,6 +285,25 @@ span.navbar-toggler-icon {
     dt, dd {
       padding-left: 0;
     }
+  }
+}
+
+.keynote-portrait {
+  @extend .img-fluid;
+  @extend .float-end;
+}
+
+@include media-breakpoint-up(xs) {
+  .keynote-portrait {
+    width: 20%;
+    margin-left: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .keynote-portrait {
+    width: 40%;
   }
 }
 

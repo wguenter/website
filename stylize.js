@@ -53,9 +53,3 @@ glob("source/img/**/header-*.jpg", function (er, files) {
         stylize(value);
     });
 });
-
-glob("source/img/**/portrait-*.jpg", function (er, files) {
-    files.forEach((value, index) => {
-        stylize(value);
-    });
-});

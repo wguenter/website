@@ -11,16 +11,22 @@
     "dates" : {
         "example":               [ "02/01/2021", "04/03/2021", "06/05/2021" ],
         
-        "workshop":              [ "06/21/2021" ],
+        "workshop_submission":   [ "06/21/2021" ],
         "workshop_notification": [ "07/07/2021" ],
-        "tutorial":              [  ],
+        "workshop_cameraready":  [  ],
 
-        "full_paper":            [ "04/22/2021" ],
-        "short_paper":           [ "04/22/2021" ],
-        "paper_notification":    [ "06/17/2021" ],
+        "full_submission":       [ "04/22/2021" ],
+        "full_notification":     [ "06/17/2021" ],
+        "full_cameraready":      [ "07/21/2021" ],
 
-        "poster":                [ "06/25/2021" ],
-        "camera_ready":          [ "07/21/2021" ],
+        "short_submission":      [ "04/22/2021" ],
+        "short_notification":    [ "06/17/2021" ],
+        "short_cameraready":     [ "07/21/2021" ],
+        
+        "poster_submission":     [ "06/24/2021" ],
+        "poster_notification":   [ "07/15/2021" ],
+        "poster_cameraready":    [ "07/21/2021" ],
+
         "registration":          [ "07/14/2021" ]
     }
 }

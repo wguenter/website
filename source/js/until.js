@@ -36,7 +36,7 @@ function extImportantDates() {
 
     for(var i = 0; i < spans.length; ++i) {
         lefts[i].innerText = untilText(spans[i].dataset.deadline);
-        untilDecorate(spans[i].dataset.deadline, spans[i].parentElement);
+        untilDecorate(spans[i].dataset.deadline, spans[i]);
     }
 }
 

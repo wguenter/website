@@ -11,92 +11,53 @@ block content
       else 
         each date in dates
           if(date != dates[dates.length - 1])
-            span.revised.text-decoration-line-through.me-2= date
+            span.revised.text-decoration-line-through= date
         span(data-deadline = dates[dates.length - 1]).deadline #{dates[dates.length - 1]}
-        sup(data-daysleft = dates[dates.length - 1]).daysleft.ms-2
+        br.pb-0 
+        small(data-daysleft = dates[dates.length - 1]).daysleft
         if(remark)
           span.remark.text-muted.float-end |&ensp;#{remark}
 
     .row.justify-content-center
-      .col-custom.col-padding
+      .col-custom.col-padding.conf-dates
 
         +h2('Important Dates')
+        
+        p All deadlines are at 23:59 #[a(href = 'https://time.is/Anywhere_on_Earth') AOE] on the date indicated:
 
-        dl.conf-dates
+        .row.conf-dates-title
+          .col-head Track
+          .col-date Submission
+          .col-date Notification
+          .col-date Camera-Ready
 
-          dt Full Paper Submission
-          dd
-            +deadline(conference.dates.full_paper, '')
+        .row.conf-date
+          .col-head Full Papers
+          .col-date #[+deadline(conference.dates.full_submission, '')]
+          .col-date #[+deadline(conference.dates.full_notification, '')]
+          .col-date #[+deadline(conference.dates.full_cameraready, '')]
 
-          dt Short Paper Submission
-          dd
-            +deadline(conference.dates.short_paper, '')
+        .row.conf-date
+          .col-head Short Papers
+          .col-date #[+deadline(conference.dates.short_submission, '')]
+          .col-date #[+deadline(conference.dates.short_notification, '')]
+          .col-date #[+deadline(conference.dates.short_cameraready, '')]
 
-          dt Notification of Acceptance
-          dd
-            +deadline(conference.dates.paper_notification, 'Full & Short Paper')
-          
-          dt Poster Submission
-          dd.mb-4
-            +deadline(conference.dates.poster, '')
+        .row.conf-date
+          .col-head Poster 
+          .col-date #[+deadline(conference.dates.poster_submission, '')]
+          .col-date #[+deadline(conference.dates.poster_notification, '')]
+          .col-date #[+deadline(conference.dates.poster_cameraready, '')]
 
-          
-          dt Camera-ready Copy
-          dd.mb-4
-            +deadline(conference.dates.camera_ready, 'Full & Short Paper, Poster')
-          
-          dt Workshop Proposal
-          dd 
-            +deadline(conference.dates.workshop, '')
+        .row.conf-date
+          .col-head Workshop Proposals
+          .col-date #[+deadline(conference.dates.workshop_submission, '')]
+          .col-date #[+deadline(conference.dates.workshop_notification, '')]
+          .col-date
 
-          dt Notification of Acceptance
-          dd.mb-4
-            +deadline(conference.dates.workshop_notification, 'Workshop Proposal')
-
-
-          dt Tutorial Proposal
-          dd.mb-4
-            +deadline(conference.dates.tutorial, '')
-
-          dt Early Bird Registration
-          dd
-            +deadline(conference.dates.registration, '')
-          
         script
           include js/until.js
   
-
-    .row.justify-content-center
-      .col-custom.col-padding
-
-        +h2('Scope & Topics')
-        p 
-          | We solicit original, unpublished research papers that focus on all aspects of
-          | visual information communication and interaction, either via images, computer graphics,
-          | animations, virtual reality, web, or other media. Research papers may address cognitive
-          | and design aspects, underlying theories, taxonomies, implementation work, tool support,
-          | and case studies. Topics of interest include but are not limited to the following:
-    
-        ul
-          li.list-item Aesthetics in visual communication
-          li.list-item Empirical studies of novel visual metaphors
-          li.list-item Cognitive aspects of visual information comprehension
-          li.list-item Visual analytics
-          li.list-item Visual communication metaphors
-          li.list-item Graph drawing and network visualization
-          li.list-item Visual approaches to knowledge discovery
-          li.list-item Computational aesthetics
-          li.list-item Visual interaction through multimodality
-          li.list-item Graphical user interface design
-          li.list-item Visual modeling languages and UML
-          li.list-item Influence of visual arts and design
-          li.list-item Visual programming languages
-          li.list-item Visualization on mobile devices
-          li.list-item Information visualization
-          li.list-item Human-computer interaction
-          li.list-item Explainable Artificial Intelligence
-          li.list-item Visualization on Artificial Intelligence, Machine Learning and other fields
-          li.list-item Applications like SoftVis, BioVis, GeoVis, etc.
 
 
     .row.justify-content-center
@@ -108,8 +69,8 @@ block content
           | and tool demonstrations on the above and other related topics are strongly encouraged.
           | Papers can be submitted as full papers, short papers and posters. Each submitted
           | symposium paper will be peer-reviewed by at least three International Program Committee
-          | members. You are welcome to submit a paper to VINCI 2020. All accepted papers and posters
-          | will appear in the proceedings of VINCI 2020 published by ACM Press and made available in the
+          | members. You are welcome to submit a paper to #{conference.short} #{conference.year}. All accepted papers and posters
+          | will appear in the proceedings of #{conference.short} #{conference.year} published by ACM Press and made available in the
           | #[a(href="http://dl.acm.org/") ACM Digital Library] (EI indexed). Moreover, authors of a number of selected full papers of
           | high quality will be invited to prepare revised versions of their work for submission to a
           | special issue of the #[a(href="https://vciba.springeropen.com/") Journal of Visual Computing for Industry, Biomedicine, and Art], and a
@@ -137,16 +98,48 @@ block content
           li.list-item Poster: up to two (2) pages (including references)
 
         p
-          | NOTE: All paper submissions should be made through the #[a(href="https://easychair.org/conferences/?conf=vinci2020") EasyChair] conference management system.
+          | NOTE: All paper submissions should be made through the #[a(href="https://easychair.org/conferences/?conf=vinci2021") EasyChair] conference management system.
           | In case of any questions related to the submission process or conference program, please contact
           | the program chairs via #[a(href="mailto:pchairs@vinci-conf.org") pchairs@vinci-conf.org].
+
+
+    .row.justify-content-center
+      .col-custom.col-padding
+
+        +h2('Scope & Topics')
+        p 
+          | We solicit original, unpublished research papers that focus on all aspects of
+          | visual information communication and interaction, either via images, computer graphics,
+          | animations, virtual reality, web, or other visual media. Research papers should address cognitive
+          | and design aspects, underlying theories, taxonomies, implementation work, tool support,
+          | and case studies. Topics of interest include but are not limited to the following:
+    
+        ul
+          li.list-item Visual communication metaphors
+          li.list-item Cognitive aspects of visual information comprehension
+          li.list-item Empirical studies of novel visual metaphors
+          li.list-item Visualization on artificial intelligence, machine learning and other fields
+          li.list-item Explainable artificial intelligence
+          li.list-item Aesthetics in visual communication and computational aesthetics
+          li.list-item Influence of visual arts and design to visual communication
+          li.list-item Information visualization and visual analytics
+          li.list-item Visual approaches to knowledge discovery
+          li.list-item Visual interaction through multimodality
+          li.list-item Visualization on mobile devices
+          li.list-item Graph drawing and network visualization
+          li.list-item Visual modeling languages
+          li.list-item Visual programming languages
+          li.list-item Graphical user interface design
+          li.list-item Human-computer interaction
+          li.list-item Applications in SoftVis, BioVis, GeoVis, etc.
+
 
     .row.justify-content-center
       .col-custom.col-padding
         
         +h2('Workshops & Tutorials')
         p
-          | VINCI '21 is also soliciting proposals for full-day or half-day workshops and tutorials
+          | #{conference.short} #{conference.shortYear} is also soliciting proposals for full-day or half-day workshops and tutorials
           | on topics that address areas of interest to the community. Proposals should not be
           | longer than a maximum of 2 pages. In particular, workshop proposals should include:
 
@@ -164,11 +157,12 @@ block content
           | in visual information communication and interaction. Tutorial proposals should include short
           | biographies of the proposers, a draft of the tutorial content, intended length, and evidence
           | of the possibility of attracting audience to the tutorial.
-
+  
+      //-
         p
           | It is possible to extend the symposium by one day in case many workshops or tutorials are
           | proposed and accepted.
 
         p
-          | Workshop / Tutorial / Special Session / Panel proposals should be sent via email to
+          | Workshop proposals should be sent via email to
           | #[a(href="mailto:proposals@vinci-conf.org?subject=VINCI 2021 - (Workshop/Tutorial/Session/Panel) Proposal Submission") proposals@vinci-conf.org]. Please add the concrete proposal type to the subject line.

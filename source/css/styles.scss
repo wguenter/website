@@ -59,7 +59,13 @@ strong, th {
   }
 
   p.title, p.sub-title {
-    background: $vinci-black;
+    
+    background: rgba(black, 0.3333);
+    backdrop-filter: blur(16px);
+    @-moz-document url-prefix() {
+      background: rgba(black, 0.6666) !important;
+    }
+
     @extend .position-relative;
     @extend .py-1;
     @extend .mx-3;
@@ -264,7 +270,7 @@ span.navbar-toggler-icon {
 
 
 .col-padding {
-  h3, p, ul, dl, figure {
+  h3, p, ul, dl, figure, table {
     margin-left: 1.75rem;
   }
   ul:not(.list-inline) { 
@@ -279,20 +285,27 @@ span.navbar-toggler-icon {
 
 @include media-breakpoint-up(xs) {
   .col-padding {
-    h3, p, ul, dl, figure {
+    h3, p, ul, dl, figure, table {
       margin-right: 5.0rem;
     }
+  }
+  .types {
+    margin-right: 6.75rem;
   }
 }
 
 @include media-breakpoint-down(sm) {
   .col-padding {
-    h3, p, ul, dl, figure {
+    h3, p, ul, dl, figure, table {
       margin-right: 1.75rem;
     }
     dt, dd {
       padding-left: 0;
     }
+  }
+  .types {
+    margin-right: 3.5rem;
+    font-size: $small-font-size;
   }
 }
 
@@ -335,12 +348,16 @@ dl.conf-chairs {
   }
 }
 
+tr.table-emph {
+  // border-bottom-color:  darkgrey;
+  color: $vinci-color-light;
+  //background-color: lighten($vinci-color-lighter, 30%);
+}
+
 
 .conf-dates {
-
   
   .conf-dates-title {
-  //  @extend .justify-content-left;
     @extend .ms-3;
     @extend .mb-3;
     @extend .text-uppercase;  
@@ -399,29 +416,3 @@ dl.conf-chairs {
     @extend strong;
   }
 }
-
-// .conf-dates {
-
-//   .conf-dates-head {
-//     @extend .row;
-//     @extend .justify-content-end;
-//     div {
-//       font-weight: $font-weight-bolder;
-//     }
-//   }
-//   // dt {
-//   //   @extend .col-sm-3;
-//   //   @extend .text-sm-end;
-//   // }
-//   // dd {
-//   //   @extend .col-sm-2;
-//   // }
-
-//   // .passed {
-//   //   @extend .text-muted;
-//   //   @extend .text-decoration-line-through;
-//   // }
-//   // .upcomming {
-//   //   font-weight: $font-weight-bolder;
-//   // }
-// }

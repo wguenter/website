@@ -8,6 +8,10 @@
         "url": "submissions"
     },
     {
+        "title": "Registration",
+        "url": "registration"
+    },
+    {
         "title": "Program",
         "url": "program"
     },
@@ -20,7 +24,7 @@
         "url": "workshops"
     },
     {
-        "title": "Venue | Event",
+        "title": "Venue",
         "url": "venue"
     },
     {

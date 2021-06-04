@@ -223,7 +223,6 @@ img.brand-logo {
 }
 
 .nav-link, .dropdown-item {
-  @extend .text-uppercase;
   &.active {
     color: $vinci-color-dark;
   }

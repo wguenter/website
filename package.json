@@ -5,6 +5,7 @@
     "devDependencies": {
         "axios": "^0.21.1",
         "bootstrap": "^5.0.0-beta1",
+        "chokidar": "^3.5.2",
         "copy-webpack-plugin": "^6.4.1",
         "css-loader": "^5.0.1",
         "extract-loader": "^5.1.0",

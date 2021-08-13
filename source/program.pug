@@ -8,13 +8,231 @@ block content
       .col-custom.col-padding
 
         +h2('Program')
-        p
-          | More information will follow in the coming days and weeks.
+        p 
+          | All presentations will take place virtually, using the event system Hopin (More information will follow in the coming days). 
+          | The following program is currently not finalized and minor changes may be made.
+
+        ul.list
+          li.list-item #[a(href="program.html#day01") September 6, 2021 / Day 1 / Monday]
+          li.list-item #[a(href="program.html#day02") September 7, 2021 / Day 2 / Tuesday]
+          li.list-item #[a(href="program.html#day03") September 8, 2021 / Day 3 / Wednesday]
+
+
+        table.table.table-borderless.align-top.table-program
+          thead
+            tr.border-bottom.border-dark
+              th(scope = 'col' colspan = '1') #[.fw-light Time]
+              th(scope = 'col' colspan = '1') #[a(name = 'day01') Monday / September 6, 2021 / Day One]
+          tbody
+            tr.text-muted
+              td 08:00
+              td Registration Opens / Conference Start
+            tr
+              td 09:00
+              td #[strong Opening of VINCI]
+            tr
+              td(rowspan = '2') 09:30
+              td #[strong Keynote Talk 1]
+            tr
+              td Visualizing the Black Box of Machine Learning: Challenges and Opportunities #[sup KN] <br>
+                small Alex Telea, Department of Information and Computing Sciences, Utrecht University
+            tr.text-muted
+              td 10:30
+              td Coffee Break
+            tr 
+              td(rowspan = '2') 11:00 
+              td.d-flex #[strong Session 1: Multivariate Data and Scatterplots]
+                small.ms-auto TBD
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 Hagrid — Gridify Scatterplots with Hilbert and Gosper Curves #[sup FP] <br>
+                    small Rene Cutura, Cristina Morariu, Zhanglin Cheng, Yunhai Wang, Daniel Weiskopf, and Michael Sedlmair
+                  li.pb-1 Scatterplot Selection Applying a Graph Coloring Algorithm #[sup FP] <br>
+                    small Takayuki Itoh, Asuka Nakabayashi, and Mariko Hagita
+                  li Visual Analysis of Industrial Multivariate Time Series #[sup SP]<br>
+                    small Maath Musleh, Angelos Chatzimparmpas, and Ilir Jusufi
+
+            tr.text-muted
+              td 12:45
+              td Lunch Break
+            tr
+              td(rowspan = '2') 14:00
+              td.d-flex #[strong Session 2: Interaction and HCI]
+                small.text-muted.ms-auto TBD
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 PropellerHand: A Hand-Mounted, Propeller-Based Force Feedback Device #[sup FP] <br>
+                    small Alexander Achberger, Kresimir Vidakovic, and Michael Sedlmair
+                  li.pb-1 Interactive Simulation and Visualization of Long-Term, ETF-based Investment Strategies #[sup SP] <br>
+                    small Martin Büßemeyer, Daniel Limberger, Willy Scheibel, and Jürgen Döllner
+                  li.pb-1 Visualization of Data Changes in 2.5D Treemaps using Procedural Textures and Animated Transitions #[sup SP] <br>
+                    small Daniel Limberger, Willy Scheibel, Jan van Dieken, and Jürgen Döllner
+                  li.pb-1 EyeFIX: An Interactive Visual Analytics Interface for Eye Movement Analysis #[sup SP] <br>
+                    small Ayush Kumar, Bharat Goel, Keshav Rajupet Premkumar, Michael Burch and Klaus Müller
+
+            tr.text-muted
+              td 15:15
+              td Coffee Break
+            tr
+              td(rowspan = '2') 15:45 
+              td.d-flex #[strong Session 3: Comics, Narratives, and Evaluation]
+                small.text-muted.ms-auto Michael Burch
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 An Empirically-based Spatial Segmentation and Coreference Annotation Scheme for Comics #[sup FP] <br>
+                    small Lauren Edlin and Joshua Reiss
+                  li.pb-1 RST as Narrative Structure for Node-Based Editors #[sup SP] <br>
+                    small Cameron Edmond, Rob Lawther, Max Cordeil, and Tomasz Bednarz
+                  li SPLORT: Evaluation of a Web-based Approach for Descriptive and Exploratory Analysis of Multivariate Spatio-temporal Data #[sup SP]<br>
+                    small Miguel Alfonso Feijóo-García and Jose Tiberio Hernandez
+                  li Design and Comparative Evaluation of Visualization Onboarding Methods #[sup SP]<br>
+                    small Christina Stoiber, Conny Walchshofer, Florian Grassinger, Holger Stitz, Marc Streit, and Wolfgang Aigner
+
+            tr.text-muted
+              td 17:00
+              td After Conference Discussions / Virtual Reception Drink
+
+        table.table.table-borderless.align-top
+          thead
+            tr.border-bottom.border-dark
+              th(scope = 'col' colspan = '1') #[.fw-light Time]
+              th(scope = 'col' colspan = '1') Tuesday / September 7, 2021 / Day Two
+          tbody
+            tr
+              td(rowspan = '2') 09:30
+              td #[strong Keynote Talk 2]
+            tr
+              td TBD #[sup KN] <br>
+                small Tamara Munzner, Department of Computer Science, University of British Columbia
+            tr.text-muted
+              td 10:30
+              td Coffee Break
+            tr 
+              td(rowspan = '2') 11:00 
+              td.d-flex #[strong Session 4: Applications I]
+                small.text-muted.ms-auto TBD
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 ThreadRadar: A Thread-Aware Visualization for Debugging Concurrent Java Programs #[sup FP] <br>
+                    small Oliver Moseler, Lucas Kreber, and Stephan Diehl
+                  li.pb-1 Interactive Visual Facets to Support Fluid Exploratory Search #[sup FP] <br>
+                    small Chen He, Luana Micallef, Barış Serim, Tung Vuong, Tuukka Ruotsalo, and Giulio Jacucci
+                  li Visual Analysis of Industrial Multivariate Time Series  #[sup SP]<br>
+                    small Michael Burch, Günter Wallner, Huub van de Wetering, Freek Rooks, and Olof Morra
+
+            tr.text-muted
+              td 12:45
+              td Lunch Break
+            tr
+              td(rowspan = '2') 14:00
+              td.d-flex #[strong Panel]
+                small.text-muted.ms-auto TBD
+            tr 
+              td TBD
+
+            tr.text-muted
+              td 15:15
+              td Coffee Break
+            tr
+              td(rowspan = '2') 15:45 
+              td.d-flex #[strong Session 5: Applications II]
+                small.text-muted.ms-auto TBD
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 OpinionManager: Visual Exploration of Online Reviews in P2P Accommodation #[sup FP] <br>
+                    small Dong Li, Hong Yin, Changbo Wang, Sicheng Song, Kirlin Li, and Chenhui Li
+                  li.pb-1 Particle Pre-processing for Particle-based Fluid Surface Reconstruction #[sup FP] <br>
+                    small Qiaorui Chen, Shuai Zhang, and Yao Zheng
+                  li Identifying Correlation Patterns in Large Educational Data Sources #[sup SP]<br>
+                    small Marco Schmid, Rahel Haymoz, David Schiller, and Michael Burch
+
+            tr.text-muted
+              td 17:00
+              td After Conference Discussions / Virtual Dinner / Social Event
+
+
+        table.table.table-borderless.align-top
+          thead
+            tr.border-bottom.border-dark
+              th(scope = 'col') #[.fw-light Time]
+              th(scope = 'col') Wednesday / September 8, 2021 / Day Three
+          tbody
+            tr
+              td(rowspan = '2') 09:15
+              td.d-flex #[strong Session 6: Posters]
+                small.text-muted.ms-auto Michael Burch
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 Enabling Comparative Analysis of Election Data in Ecuador #[sup PP] <br>
+                    small Gonzalo Gabriel Méndez and Oscar Moreno
+                  li.pb-1 Software Galaxies: Displaying Coding Activities using a Galaxy Metaphor #[sup PP] <br>
+                    small Daniel Atzberger, Willy Scheibel, Daniel Limberger, and Jürgen Döllner
+                  li.pb-1 Using Scrollytelling to Explain Voting Power in Ecuador #[sup PP]<br>
+                    small Gonzalo Gabriel Méndez and Patricio Mendoza
+                  li.pb-1 A Web-Based Tool for Analysing Formula 1 Races and Seasons #[sup PP]<br>
+                    small Sebastian Eckl, Nick Kerschagel, and Uwe Kloos
+                  li POEM: People-Oriented EMail for Social Connectedness #[sup PP]<br>
+                    small Maitreya Save and Benjamin Watson
+
+            tr.text-muted
+              td 10:30
+              td Coffee Break
+            tr 
+              td(rowspan = '2') 11:00 
+              td.d-flex #[strong Session 7: Immersive Analytics]
+                small.text-muted.ms-auto Karsten Klein
+            tr 
+              td
+                ul.px-0
+                  li.pb-1 Cross-Platform Immersive Visualization and Navigation with Augmented Reality #[sup FP] <br>
+                    small Akshay Murari, Elias Mahfoud, Weichao Wang, and Aidong Lu
+                  li Visual Linking of Feature Values in Immersive Graph Visualization Environment #[sup FP] <br>
+                    small Hinako Sassa, Maxime Cordeil, Mitsuo Yoshida, and Takayuki Itoh
+
+            tr
+              td 12:00
+              td Closing, Best Paper/Poster Awards and VINCI 2022
+            tr.text-muted
+              td 12:30
+              td After Conference Discussions / Virtual Potsdam Tour
+
 
 
     .row.justify-content-center
       .col-custom.col-padding
 
-        +h2('Sessions')
-        p
-          | More information will follow in the coming days and weeks.
+        +h2('Presentation Times')
+        p The following presentation times apply to the different paper types:
+
+        .col-lg-10.col-11.mt-4
+          table.table.table-sm.table-borderless.align-middle.table-hover
+            thead
+              tr.text-end
+                th(scope = 'col') 
+                th(scope = 'col') Presentation Time
+                th(scope = 'col') Questions
+            tbody
+              tr.border-bottom.border-muted
+                td FP / Full Paper
+                td.text-end 25 Minutes 
+                td.text-end  5 Minutes
+              tr.border-bottom.border-muted
+                td SP / Short Paper
+                td.text-end 12 Minutes 
+                td.text-end  3 Minutes
+              tr.border-bottom.border-muted
+                td PP / Poster Paper
+                td.text-end 10 Minutes 
+                td.text-end 5 Minutes
+              tr.border-muted
+                td KN / Keynote
+                td.text-end 45 Minutes
+                td.text-end 15 Minutes
+
+

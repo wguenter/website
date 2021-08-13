@@ -267,6 +267,10 @@ span.navbar-toggler-icon {
   }
 }
 
+.table-program small {
+  @extend .text-muted;
+}
+
 
 .col-padding {
   h3, p, ul, dl, figure, table {
@@ -414,4 +418,5 @@ tr.table-emph {
   .upcomming {
     @extend strong;
   }
+
 }

@@ -1,11 +1,12 @@
 # VINCI website
 
-The website can be edited from within GitHub only and will be deployed into the 'deploy' branch and published at https://vinci-conf.org automatically on every commit to the master.
+The website is serverd by the domain https://vinci-conf.org and can be edited directly from within GitHub. 
+It will be deployed into the ```deploy``` branch, and copied and published internally by GitHub on every commit to the master.
 
 #### Deployment
 
 The action for deployment is specified in [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
-It will be triggered automatically when any changes are pushed to the master branch.
+It will be triggered automatically when any changes are pushed to the ```master``` branch. 
 
 #### Local Development & Testing
 

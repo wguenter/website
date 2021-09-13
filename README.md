@@ -1,6 +1,13 @@
 # VINCI website
 
-#### Development & Testing
+The website can be edited from within GitHub only and will be deployed at https://vinci-conf.org automatically on every commit to the master.
+
+#### Deployment
+
+The action for deployment is specified in [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+It will be triggered automatically when any changes are pushed to the master branch.
+
+#### Local Development & Testing
 
 To keep the website maintainable, the conference website is static and built using [pug](https://pugjs.org/api/getting-started.html) (used to define pages as well as templates with more efficient syntax) and webpack.
 In addition, development requires [Node.js](https://nodejs.org/en/).
@@ -12,7 +19,3 @@ In addition, development requires [Node.js](https://nodejs.org/en/).
 Major conference information such as title, year, location as well as submission and notification dates are specified in [conference.json](conference.json).
 For submission updates, multiple dates can be specified, with the last beeing used and displayed as latest valid date. Previous dates will be displayed but crossed out.
 
-#### Deployment
-
-The action for deployment is specified in [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
-It will be triggered automatically when any changes are pushed to the master branch.

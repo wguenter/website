@@ -51,9 +51,15 @@ block content
 
         .row.conf-date
           .col-head Workshop Proposals
+          .col-date #[+deadline(conference.dates.ws_props_submission, '')]
+          .col-date #[+deadline(conference.dates.ws_props_notification, '')]
+          .col-date
+
+        .row.conf-date
+          .col-head Workshop Submissions
           .col-date #[+deadline(conference.dates.workshop_submission, '')]
           .col-date #[+deadline(conference.dates.workshop_notification, '')]
-          .col-date
+          .col-date #[+deadline(conference.dates.workshop_cameraready, '')]
 
         script
           include js/until.js

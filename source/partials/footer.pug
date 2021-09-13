@@ -18,33 +18,26 @@ section#footer.container
           small In cooperation with the Visualization Society of Japan.
 
 
-    .col-6.col-md-5.col-lg-2
+    .col-6.col-md-5.col-lg-6
       p.mb-3.clearfix
-        a(href = 'https://hpi.de/en/index.html') #[img(src = require('img/hpi-logo.svg')).logo]
-      p.mb-5
-        small In cooperation with the Hasso Plattner Institute.
-
-
-    .col-6.col-md-5.col-lg-4
-      p.mb-3.clearfix
-        a(href = 'https://hpi3d.de/') #[img(src = require('img/hpicgs-logo.png')).logo]
+        a(href = 'https://www.fhgr.ch/') #[img(src = require('img/fhgr-logo-sm.svg')).logo]
         small 
-          | Hasso Plattner Institute
+          | FH Graubünden
           br 
-          | University of Potsdam
+          | University of Applied Sciences
           br
-          | Prof.-Dr.-Helmert-Straße 2-3
+          | Pulvermühlestrasse 57
           br
-          | 14482 Potsdam, Germany
+          | CH - 7000 Chur
 
       p.mb-5
-        small Organized by the Computer Graphics Systems Group. Contact us via 
-          | email #[a(href = 'mailto:vinci2021@hpi.de') vinci2021@hpi.de] or
-          | phone #[a(href = 'tel:+4933155093907') +49 331 5509-3907].
+        small Organized by the Competence Centre for Data Analysis, Visualisation and Simulation (DAViS). Contact us via 
+          | email #[a(href = 'mailto:michael.burch@fhgr.ch') michael.burch@fhgr.ch] or 
+          | phone #[a(href = 'tel:+41812863771') +41 81 286-3771].
 
 
 footer.text-center
-  small Copyright &copy; #{conference.year} #{conference.short}
+  small Copyright &copy; #{Math.min(conference.year, 2021)} #{conference.short}
 
 
 script(src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js' integrity = 'sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW' crossorigin = 'anonymous')

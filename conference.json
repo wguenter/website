@@ -1,33 +1,35 @@
 {
     "title": "International Symposium on Visual Information Communication and Interaction",
     "short": "VINCI",
-    "number": "14",
+    "number": "15",
     "ordinal": "th",
-    "date": "6–7 September",
-    "year": "2021",
-    "shortYear": "'21",
-    "location": "Potsdam, Germany",
+    "date": "16–18 August",
+    "year": "2022",
+    "shortYear": "'22",
+    "location": "Chur, Switzerland",
 
     "dates" : {
-        "example":               [ "02/01/2021", "04/03/2021", "06/05/2021" ],
+        "example":               [ "02/01/2022", "04/03/2022", "06/05/2022" ],
+
+        "ws_props_submission":   [ "04/15/2022" ],
+        "ws_props_notification": [ "05/01/2022" ],
+
+        "workshop_submission":   [ "06/15/2022" ],
+        "workshop_notification": [ "07/01/2022" ],
+        "workshop_cameraready":  [ "07/15/2022" ],
+
+        "full_submission":       [ "04/15/2022" ],
+        "full_notification":     [ "06/01/2022" ],
+        "full_cameraready":      [ "07/15/2022" ],
+
+        "short_submission":      [ "04/15/2022" ],
+        "short_notification":    [ "06/01/2022" ],
+        "short_cameraready":     [ "07/15/2022" ],
         
-        "workshop_submission":   [ "06/21/2021" ],
-        "workshop_notification": [ "07/07/2021" ],
-        "workshop_cameraready":  [  ],
-        "workshop_paper":        [ "07/26/2021" ],
+        "poster_submission":     [ "06/15/2022" ],
+        "poster_notification":   [ "07/01/2022" ],
+        "poster_cameraready":    [ "07/15/2022" ],
 
-        "full_submission":       [ "05/13/2021" ],
-        "full_notification":     [ "07/01/2021" ],
-        "full_cameraready":      [ "07/21/2021" ],
-
-        "short_submission":      [ "05/13/2021" ],
-        "short_notification":    [ "07/01/2021" ],
-        "short_cameraready":     [ "07/21/2021" ],
-        
-        "poster_submission":     [ "07/15/2021" ],
-        "poster_notification":   [ "07/27/2021" ],
-        "poster_cameraready":    [ "08/05/2021" ],
-
-        "registration":          [ "07/28/2021" ]
+        "registration":          [ "07/15/2022" ]
     }
 }

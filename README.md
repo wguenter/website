@@ -1,6 +1,6 @@
 # VINCI website
 
-The website can be edited from within GitHub only and will be deployed at https://vinci-conf.org automatically on every commit to the master.
+The website can be edited from within GitHub only and will be deployed into the 'deploy' branch and published at https://vinci-conf.org automatically on every commit to the master.
 
 #### Deployment
 

@@ -20,3 +20,6 @@ In addition, development requires [Node.js](https://nodejs.org/en/).
 Major conference information such as title, year, location as well as submission and notification dates are specified in [conference.json](conference.json).
 For submission updates, multiple dates can be specified, with the last beeing used and displayed as latest valid date. Previous dates will be displayed but crossed out.
 
+#### Archiving, Starting the next Iteration
+
+Just copy all files and folders of the ```deploy``` branch, **excluding** the archive folders of previous VINCIs, into the appropriate year directory of the [vinci-conf/website-archive](https://github.com/vinci-conf/website-archive) repository. This repository will be used for automated deployment of previous VINCI websites.
